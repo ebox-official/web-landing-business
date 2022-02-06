@@ -1,0 +1,756 @@
+<!doctype html>
+<html lang="en" class="dark">
+
+<head>
+
+	<!-- Required meta tags -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Meta tags for mobile -->
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="theme-color" content="#ff6400">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#ff6400">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="favicon-180x180.png">
+
+	<meta name="description" content="ebox provides services and solutions with a unique character, bringing straight-forward innovation and usability to end users and businesses alike.">
+	<meta name="twitter:card" content="summary_large_image">
+	<meta property="og:title" content="ebox">
+	<meta property="og:site_name" content="ebox">
+	<meta property="og:description" content="ebox provides services and solutions with a unique character, bringing straight-forward innovation and usability to end users and businesses alike.">
+	<meta property="og:image" content="https://ebox.io/img/og-image.jpg">
+	<meta property="og:url" content="https://ebox.io/">	
+
+	<link rel="icon" type="image/png" href="img/favicon-32x32.png" sizes="32x32">
+	<link rel="icon" type="image/png" href="img/favicon-96x96.png" sizes="96x96">
+	<link rel="icon" type="image/png" href="img/favicon-180x180.png" sizes="180x180">
+	<link rel="apple-touch-icon" sizes="180x180" href="img/favicon-180x180.png">
+
+	<!-- Bootstrap CSS -->
+	<link rel="stylesheet" href="css/bootstrap-nightshade.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<title>ebox</title>
+</head>
+
+<body>
+
+	<div id="main-scrollbar">
+		<nav class="navbar navbar-expand-lg navbar-light bg-dark border-bottom" style="min-height: 96px;">
+			<div class="container">
+				<a class="navbar-brand" href="www.google.com">
+					<img height="32" src="img/ebox-logo-dark.svg" alt="ebox logo">
+				</a>
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
+					aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="fw-bold collapse navbar-collapse" id="navbarScroll">
+					<ul class="flex-grow-1 gap-md-4 navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll justify-content-center">
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#escrow-section">On-Chain Escrow</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" aria-current="page" href="#staking-section">Token Utility</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#business-section">Business Solutions</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#news-section">News</a>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="#roadmap-section">Roadmap</a>
+						</li>
+					</ul>
+					<div class="d-flex">
+						<button class="btn btn-outline-primary" type="submit">Whitepaper</button>
+					</div>
+				</div>
+			</div>
+		</nav>
+	
+		<!-- <div class="text-white py-3" style="background-color: #cc4e00;">
+			<div class="fs-4 d-flex justify-content-center align-items-center gap-3"><span class="badge bg-primary">NEW</span>We are now live on Moonriver!</div>
+		</div> -->
+
+		<section class="py-5" style="background-image: url(img/homepage-hero.png); background-size: cover; background-repeat: none; min-height: 75vh;">
+			<div class="container py-5">
+				<div class="d-grid gap-4 fw-bold" style="max-width: 60ch;">
+					<div>
+						<h2 class="text-primary">Welcome to ebox Business</h2>
+						<h1 class="fw-bolder">Crypto Transactions<br><span id="rotatedText">Made Easy</span></h1>
+						<div id="rotatedTextUnderline" style="height: 6px; width: 10px; background-color: var(--bs-primary);"></div>
+					</div>
+					<p>Keeping things simple and safe, we address widespread issues and problems throughout the crypto space, making life a lot easier for everyone involved.</p>
+					<div>
+						<div class="d-flex gap-2 mb-2">
+							<a class="btn btn-primary fw-bold text-white" href="https://app.uniswap.org/#/swap?inputCurrency=ETH&outputCurrency=0x33840024177a7daca3468912363bed8b425015c5&use=V2">Uniswap</a>
+							<a class="btn btn-primary fw-bold text-white" href="https://pancakeswap.finance/swap#/swap?inputCurrency=BNB&outputCurrency=0x33840024177a7daca3468912363bed8b425015c5">PancakeSwap</a>
+						</div>
+						<a class="btn btn-outline-primary fw-bold" href="https://ebox.io/ebox_Whitepaper_v2.pdf">Whitepaper</a>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<section class="border-top border-bottom">
+			<div class="container d-flex flex-wrap justify-content-center gap-3 py-4">
+				<a target="_blank" href="https://www.duckdao.io/">
+					<img src="img/partners/partner_duckdao.png" alt="DuckDAO"/>
+				</a>
+				<a target="_blank" href="https://www.polygon.technology/">
+					<img src="img/partners/partner_polygon.png" alt="Polygon"/>
+				</a>
+				<a target="_blank" href="https://reef.finance/">
+					<img src="img/partners/partner_reef.png" alt="Reef"/>
+				</a>
+				<a target="_blank" href="https://www.vysyn.io/">
+					<img src="img/partners/partner_vysyn.png" alt="VYSYN"/>
+				</a>
+				<a target="_blank" href="https://www.englishforums.com/">
+					<img src="img/partners/partner_english_forward.png" alt="English Forward"/>
+				</a>
+				<a target="_blank" href="https://www.Chipstars.bet/">
+					<img src="img/partners/partner_chipstars.png" alt="Chipstars"/>
+				</a>
+				<a target="_blank" href="https://www.marketacross.com/">
+					<img src="img/partners/partner_marketacross.png" alt="MarketAcross"/>
+				</a>
+				<a target="_blank" href="https://www.keydifferencemedia.com/">
+					<img src="img/partners/partner_kdm.png" alt="KeyDifferenceMedia"/>
+				</a>
+				<a target="_blank" href="https://www.amplifi.vc/">
+					<img src="img/partners/partner_amplifi.png" alt="Amplifi VC"/>
+				</a>
+				<a target="_blank" href="https://nabais.capital/">
+					<img src="img/partners/partner_nabais.png" alt="Nabais VC"/>
+				</a>
+				<a target="_blank" href="https://www.vendetta.capital/">
+					<img src="img/partners/partner_vendetta.png" alt="Vendetta"/>
+				</a>
+			</div>
+	
+			<div style="position: relative; overflow: hidden; background-color: #111;">
+				<style>
+					.trapezius, .trapezius-outline {
+						position: absolute;
+						top: 0;
+						left: 50%;
+						transform: translate(-50%, -50%);
+						width: 75rem;
+						height: 15rem;
+						clip-path: polygon(0 0, 100% 0, 70% 100%, 30% 100%);
+					}
+					.trapezius {
+						z-index: 2;
+    					background-color: var(--bs-body-bg-alt);
+					}
+					.trapezius-outline {
+						z-index: 1;
+						top: 1px;
+						/* background-color: #eee; */
+					}
+				</style>
+				<div class="trapezius"></div>
+				<div class="trapezius-outline"></div>
+				<div class="py-5">
+					<h2 class="h1 text-center pb-5 mb-0 position-relative" style="z-index: 3;">Supported Blockchains</h2>
+					<div class="container">
+						<div class="row g-5 justify-content-center align-items-center"  style="max-width: 1080px; margin: 0 auto;">
+							<div class="col-auto">
+								<a target="_blank" href="https://ethereum.org/">
+									<img class="bc-logo" src="img/chains/ethereum-chain.png" alt="ethereum chain">
+								</a>
+							</div>
+							<div class="col-auto">
+								<a target="_blank" href="https://www.binance.org/en/smartChain">
+									<img class="bc-logo" src="img/chains/binance-smart-chain.png" alt="binance smart chain">
+								</a>
+							</div>
+							<div class="col-auto">
+								<a target="_blank" href="https://polygon.technology/">
+									<img class="bc-logo" src="img/chains/polygon-chain.png" alt="polygon chain">
+								</a>
+							</div>
+							<div class="col-auto">
+								<a target="_blank" href="https://reef.io/">
+									<img class="bc-logo" src="img/chains/reef-chain.png" alt="reef chain">
+								</a>
+							</div>
+							<!-- <div class="col-auto">
+								<a target="_blank" href="https://moonbeam.network/networks/moonriver/">
+									<img class="bc-logo" src="img/chains/moonriver-chain.png" alt="moonriver chain">
+								</a>
+							</div> -->
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<section class="container-fluid px-md-4 py-5 bg-light">
+			<h2 class="display-4 text-center mt-5">What is ebox?</h2>
+			<div class="container col-xxl-8 py-md-5">
+				<div class="row flex-lg-row-reverse justify-content-center align-items-center g-5 py-3 py-md-5">
+					<div class="col-10 col-sm-8 col-lg-6">
+						<img src="img/video-thumb-no-play.PNG" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="425" loading="lazy">
+					</div>
+					<div class="col-lg-6">
+						<h5 class="fw-bold lh-base mb-4" style="margin-top: 66px;">ebox provides services and solutions with a unique character, bringing straight-forward innovation and usability to end users and businesses alike.</h5>
+						<p style="color: #666;">With the spirit of community embedded deep within our hearts and vision of the project, having our roots within the trader, investor &amp; enthusiast community ourselves, we understand the needs of our audience, and adjust dynamically to any challenges we face along our journey.</p>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<section id="escrow-section" class="position-relative px-4 py-5">
+			<div class="light-diagonal"></div>
+			<div class="container col-xxl-8">
+				<div class="row justify-content-center align-items-center g-5 pt-5 mt-5">
+					<div class="col-10 col-sm-8 col-lg-6">
+						<img src="img/escrow-screen-alt.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="450" loading="lazy">
+					</div>
+					<div class="col-lg-6">
+						<h1 class="display-5 fw-bold lh-1 mb-4">On-Chain Escrow</h1>
+						<p class="fw-bold" style="color: #666;">Never lose funds due to a wrong address again &ndash; The ebox On-Chain Escrow service enables for reversible peer-to-peer transactions, offering an unprecedented level of comfort and safety in everyday crypto life.</p>
+						<div class="mt-4 d-grid gap-2 d-md-flex justify-content-md-start">
+							<a class="btn btn-primary btn-lg px-4 me-md-2 text-white" href="https://ebox.io/app">Use App</a>
+							<button type="button" class="btn btn-outline-secondary btn-lg px-4" style="color: #6c757d; border-color: #6c757d;" disabled>About</button>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- video -->
+			<div class="mt-5">
+				<style>
+					.laptop-screen {
+						width: 80%;
+						margin: 0 auto;
+						border: .25rem solid #000;
+						border-radius: 1rem;
+						border-top-width: 1rem;
+						border-bottom-width: 1rem;
+						background-color: #000;
+						box-shadow: 0 0 0px 5px #938f93;
+					}
+					.laptop-base {
+						display: block;
+						margin: 0 auto;
+					}
+				</style>
+				<h1 class="text-center mb-5 pb-2 fw-bold">How does it work?</h1>
+				<div class="container col-xxl-8">
+					<div class="laptop-screen">
+						<div class="ratio ratio-16x9">
+							<iframe src="https://www.youtube.com/embed/jA9MufTDSwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
+							</iframe>
+						</div>
+					</div>
+					<img src="img/laptop-base.png" alt="laptop base" class="laptop-base img-fluid">
+				</div>
+			</div>
+			<!-- end of video -->
+
+		</section>
+
+		<section id="staking-section" class="position-relative pt-5 mt-5 bg-light">
+			<style>
+				.spg-row {
+					background-image: linear-gradient(45deg, #fbf3df, #ffffff);
+					padding: 3rem;
+					border-radius: 1rem;
+					box-shadow: 0 5px 15px #0001;
+				}
+				.spg-row--bg-reverse {
+					background-image: linear-gradient(315deg, #fbf3df, #ffffff);
+				}
+			</style>
+			<div class="white-diagonal"></div>
+			<div class="py-5 mt-5" style="padding-bottom: 12rem!important;">
+				<h1 class="display-5 fw-bold lh-1 my-5 pb-5 text-center">Token Utility</h1>
+				<div class="container px-4 col-lg-8 col-xxl-6 fw-bold" style="color: #666;">
+					<div class="spg-row spg-row--bg-reverse mb-5 row align-items-center">
+						<h4 class="text-center text-dark fw-bold lh-1 mb-5">In-Wallet Staking</h4>
+						<div class="col text-center">
+							<img class="mb-5 mb-md-0" height="256" src="img/coins.png" alt="coins">
+						</div>
+						<div class="col-12 col-md-6">
+							<p>At ebox, we put safety first &ndash; Therefore, our users can stake their EBOX tokens without locking them inside a smart contract.</p>
+							<p>Everyone holding at least 5,000 EBOX in their wallet automatically participates in our staking program.</p>
+							<p>It's as simple as that!</p>
+							<p class="mb-0">See <a href="https://ebox-official.medium.com/introducing-ebox-staking-rewards-4c65c07fc89d" target="_blank">Medium article</a> for details.</p>
+						</div>
+					</div>
+					<div class="spg-row spg-row--bg-reverse mb-5 row align-items-center">
+						<h4 class="text-center text-dark fw-bold lh-1 mb-5">Payout: Income Share</h4>
+						<div class="col-12 col-md-6">
+							<p>We se it as an absolute necessity to let our supporters &amp; believers benefit from our success. It is theirs just as much as it is ours.</p>
+							<p>25% of all ebox income is distributed among our community. Everyone holding 5,000 EBOX or above is automatically included.</p>
+							<p class="mb-0">Payout shares go along with our staking model, meaning that the same conditions, multipliers and bonuses apply.</p>
+						</div>
+						<div class="col text-center">
+							<img class="mb-5 mb-md-0" height="256" src="img/piggy-bank.png" alt="piggy bank">
+						</div>
+					</div>
+					<div class="spg-row spg-row--bg-reverse mb-5 row align-items-center">
+						<h4 class="text-center text-dark fw-bold lh-1 mb-5">Transactionless Governance</h4>
+						<div class="col text-center">
+							<img class="mb-5 mb-md-0" height="256" src="img/vote.png" alt="vote">
+						</div>
+						<div class="col-12 col-md-6">
+							<p>There is nothing more directly democratic than getting our community involved through open, public voting on matters that set the course and direction of our project's development.</p>
+							<p>As such, anyone holding 1 EBOX is eligible to vote on topics around the project. Through a weighted-vote algorithm, we strike a fair balance between amount of tokens held and the power of the individual.</p>
+							<p class="mb-0">See <a href="https://ebox-official.medium.com/ethbox-introducing-governance-540f237cda3e" target="_blank">Medium article</a> for details.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<style>
+			#business-section {
+				position: relative;
+				z-index: 2;
+				margin: -100px 0;
+				clip-path: polygon(0 0, 100% 100px, 100% 100%, 0 calc(100% - 100px));
+			}
+		</style>
+		<section id="business-section" class="container-fluid bg-dark text-white">
+			<div class="row">
+				<div class="col-12 col-md-6" style="background-image: url('img/business-bg.PNG'); background-size: cover;">
+					<div class="text-center" style="padding: 12rem 3rem 3rem 3rem;max-width: 500px;margin: 0 auto;">
+						<h2 class="display-5 fw-bold lh-sm mb-4">ebox Business Solutions</h2>
+						<p>Offering the technology we developed to other crypto projects and businesses, we provide a complete solution for everything from token utility through staking & governance, crowd sales, and beyond.</p>
+						<button type="button" class="d-block w-50 mx-auto btn btn-secondary btn-lg mt-5" disabled="">Coming soon</button>
+					</div>
+					<div class="container-fluid" style="max-width: 1000px; padding-bottom: 12rem;">
+						<div class="row g-5">
+							<div class="col-12 col-md-6">
+								<div class="h-100 px-3 py-4 shadow rounded bg-dark">
+									<h2 class="display-6 fw-bold mb-1">In-Wallet Staking</h2>
+									<small>Staking as a service</small>
+									<hr>
+									<p class="fw-bold">We provide our staking calculations as a tailor-made solution, through a simple API for your project's staking dashboard.</p>
+								</div>
+							</div>
+							<div class="col-12 col-md-6">
+								<div class="h-100 px-3 py-4 shadow rounded bg-dark">
+									<h2 class="display-6 fw-bold mb-1">eIPS: Crowd Sales</h2>
+									<small>ebox Investment Platform Service</small>
+									<hr>
+									<p class="fw-bold">The ebox Investment Platform Service enables project administrators to deploy a crowd sale through a convenient dashboard.</p>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 business-feature-coming-soon">
+								<div class="h-100 px-3 py-4 shadow rounded bg-dark">
+									<h2 class="display-6 fw-bold mb-1">Liquidity Lock</h2>
+									<small>Coming soon</small>
+									<hr>
+									<p class="fw-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, tempore ut nostrum voluptatibus magnam hic perferendis.</p>
+								</div>
+							</div>
+							<div class="col-12 col-md-6 business-feature-coming-soon">
+								<div class="h-100 px-3 py-4 shadow rounded bg-dark">
+									<h2 class="display-6 fw-bold mb-1">Staking as Service</h2>
+									<small>Coming soon</small>
+									<hr>
+									<p class="fw-bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio accusamus similique veritatis pariatur a aperiam?</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="col-12 col-md-6 d-flex flex-column justify-content-center" style="box-shadow: -10px 0 20px #0002;">
+					<div style="padding: 12rem 3rem; max-width: 500px; margin: 0 auto;">
+						<div class="text-center">
+							<h2 class="display-5 fw-bold lh-1 mt-5 mb-3">Contact Us</h2>
+							<p>Curious to implement our innovations &amp; solutions? Drop us a message!</p>
+						</div>
+						<div class="container-fluid mt-5 p-0">
+							<form class="row g-2 mb-4" onsubmit="return sendEmail(this);">
+								<div class="col-12 col-md-6">
+									<label for="name" class="ms-2 form-label">Name</label>
+									<input id="name" type="text" class="form-control" placeholder="Name" maxlength="255" required>
+								</div>
+								<div class="col-12 col-md-6">
+									<label for="subject" class="ms-2 form-label">Subject</label>
+									<input id="subject" type="text" class="form-control" placeholder="Subject" maxlength="255" required>
+								</div>
+								<div class="col-12">
+									<label for="contact-us-email" class="ms-2 form-label">Email</label>
+									<input type="email" class="form-control" id="contact-us-email" placeholder="Email" maxlength="255" required>
+								</div>
+								<div class="col-12">
+									<label for="message" class="ms-2 form-label">Message</label>
+									<textarea class="form-control" id="message" rows="3" maxlength="5000" required></textarea>
+								</div>
+								<div class="col-12 mt-5">
+									<button id="contact-us-submit" type="submit" class="d-block w-50 mx-auto btn btn-primary btn-lg">Send</button>
+								</div>
+								<div class="contact-us-notification">
+									<!-- alert go here -->
+								</div>
+							</form>
+							<small class="text-muted">
+								Business inquiries only. Non-business requests posted through this form will not be answered. For such, kindly contact <a href="mailto:hello@ebox.io">hello@ebox.io</a> directly.
+							</small>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<svg xmlns="http://www.w3.org/2000/svg" style="display: none;">
+			<symbol id="key" viewBox="0 0 16 16">
+				<title>Key</title>
+				<path
+					d="M0 8a4 4 0 0 1 7.465-2H14a.5.5 0 0 1 .354.146l1.5 1.5a.5.5 0 0 1 0 .708l-1.5 1.5a.5.5 0 0 1-.708 0L13 9.207l-.646.647a.5.5 0 0 1-.708 0L11 9.207l-.646.647a.5.5 0 0 1-.708 0L9 9.207l-.646.647A.5.5 0 0 1 8 10h-.535A4 4 0 0 1 0 8zm4-3a3 3 0 1 0 2.712 4.285A.5.5 0 0 1 7.163 9h.63l.853-.854a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.646-.647a.5.5 0 0 1 .708 0l.646.647.793-.793-1-1h-6.63a.5.5 0 0 1-.451-.285A3 3 0 0 0 4 5z" />
+				<path d="M4 8a1 1 0 1 1-2 0 1 1 0 0 1 2 0z" />
+			</symbol>
+			<symbol id="x-diamond" viewBox="0 0 16 16">
+				<title>X Diamond</title>
+				<path
+					d="M7.987 16a1.526 1.526 0 0 1-1.07-.448L.45 9.082a1.531 1.531 0 0 1 0-2.165L6.917.45a1.531 1.531 0 0 1 2.166 0l6.469 6.468A1.526 1.526 0 0 1 16 8.013a1.526 1.526 0 0 1-.448 1.07l-6.47 6.469A1.526 1.526 0 0 1 7.988 16zM7.639 1.17 4.766 4.044 8 7.278l3.234-3.234L8.361 1.17a.51.51 0 0 0-.722 0zM8.722 8l3.234 3.234 2.873-2.873c.2-.2.2-.523 0-.722l-2.873-2.873L8.722 8zM8 8.722l-3.234 3.234 2.873 2.873c.2.2.523.2.722 0l2.873-2.873L8 8.722zM7.278 8 4.044 4.766 1.17 7.639a.511.511 0 0 0 0 .722l2.874 2.873L7.278 8z" />
+			</symbol>
+			<symbol id="piggy-bank" viewBox="0 0 16 16">
+				<title>Piggy Bank</title>
+				<path
+					d="M5 6.25a.75.75 0 1 1-1.5 0 .75.75 0 0 1 1.5 0zm1.138-1.496A6.613 6.613 0 0 1 7.964 4.5c.666 0 1.303.097 1.893.273a.5.5 0 0 0 .286-.958A7.602 7.602 0 0 0 7.964 3.5c-.734 0-1.441.103-2.102.292a.5.5 0 1 0 .276.962z" />
+				<path fill-rule="evenodd"
+					d="M7.964 1.527c-2.977 0-5.571 1.704-6.32 4.125h-.55A1 1 0 0 0 .11 6.824l.254 1.46a1.5 1.5 0 0 0 1.478 1.243h.263c.3.513.688.978 1.145 1.382l-.729 2.477a.5.5 0 0 0 .48.641h2a.5.5 0 0 0 .471-.332l.482-1.351c.635.173 1.31.267 2.011.267.707 0 1.388-.095 2.028-.272l.543 1.372a.5.5 0 0 0 .465.316h2a.5.5 0 0 0 .478-.645l-.761-2.506C13.81 9.895 14.5 8.559 14.5 7.069c0-.145-.007-.29-.02-.431.261-.11.508-.266.705-.444.315.306.815.306.815-.417 0 .223-.5.223-.461-.026a.95.95 0 0 0 .09-.255.7.7 0 0 0-.202-.645.58.58 0 0 0-.707-.098.735.735 0 0 0-.375.562c-.024.243.082.48.32.654a2.112 2.112 0 0 1-.259.153c-.534-2.664-3.284-4.595-6.442-4.595zM2.516 6.26c.455-2.066 2.667-3.733 5.448-3.733 3.146 0 5.536 2.114 5.536 4.542 0 1.254-.624 2.41-1.67 3.248a.5.5 0 0 0-.165.535l.66 2.175h-.985l-.59-1.487a.5.5 0 0 0-.629-.288c-.661.23-1.39.359-2.157.359a6.558 6.558 0 0 1-2.157-.359.5.5 0 0 0-.635.304l-.525 1.471h-.979l.633-2.15a.5.5 0 0 0-.17-.534 4.649 4.649 0 0 1-1.284-1.541.5.5 0 0 0-.446-.275h-.56a.5.5 0 0 1-.492-.414l-.254-1.46h.933a.5.5 0 0 0 .488-.393zm12.621-.857a.565.565 0 0 1-.098.21.704.704 0 0 1-.044-.025c-.146-.09-.157-.175-.152-.223a.236.236 0 0 1 .117-.173c.049-.027.08-.021.113.012a.202.202 0 0 1 .064.199z" />
+			</symbol>
+			<symbol id="people" viewBox="0 0 16 16">
+				<title>People</title>
+				<path
+					d="M15 14s1 0 1-1-1-4-5-4-5 3-5 4 1 1 1 1h8zm-7.978-1A.261.261 0 0 1 7 12.996c.001-.264.167-1.03.76-1.72C8.312 10.629 9.282 10 11 10c1.717 0 2.687.63 3.24 1.276.593.69.758 1.457.76 1.72l-.008.002a.274.274 0 0 1-.014.002H7.022zM11 7a2 2 0 1 0 0-4 2 2 0 0 0 0 4zm3-2a3 3 0 1 1-6 0 3 3 0 0 1 6 0zM6.936 9.28a5.88 5.88 0 0 0-1.23-.247A7.35 7.35 0 0 0 5 9c-4 0-5 3-5 4 0 .667.333 1 1 1h4.216A2.238 2.238 0 0 1 5 13c0-1.01.377-2.042 1.09-2.904.243-.294.526-.569.846-.816zM4.92 10A5.493 5.493 0 0 0 4 13H1c0-.26.164-1.03.76-1.724.545-.636 1.492-1.256 3.16-1.275zM1.5 5.5a3 3 0 1 1 6 0 3 3 0 0 1-6 0zm3-2a2 2 0 1 0 0 4 2 2 0 0 0 0-4z" />
+			</symbol>
+		</svg>
+	
+		<style>
+			#misc-section {
+				position: relative;
+				z-index: 1;
+				background-color: #fff;
+				clip-path: polygon(0 0, 100% 0, 100% 100%, 0 calc(100% - 100px));
+				background-image: url(img/ebox-iso-stairs.png);
+				background-size: 100%;
+				background-position: center;
+			}
+			.feats-card {
+				display: flex;
+				align-items: flex-start;
+				padding: 2rem 1.5rem;
+				border-radius: 1rem;
+				box-shadow: 0 5px 10px #0001;
+			}
+			@media (max-width: 576px) {
+				#misc-section {
+					background-size: 200%;
+				}
+			}
+		</style>
+		<section id="misc-section" class="position-relative px-3 px-md-4 py-5" style="padding-top: 6rem!important;">
+
+			<div class="container col-xxl-8 py-5 my-5">
+				<h2 class="display-5 fw-bold pb-2 border-bottom">Our set of values</h2>
+			
+				<div class="row row-cols-1 row-cols-sm-2 g-4 py-5">
+					<div class="col">
+						<div class="feats-card glass">
+							<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+								<use xlink:href="#key"></use>
+							</svg>
+							<div>
+								<h4 class="fw-bold mb-4">Secure</h4>
+								<p class="fw-bold" style="color: #666;">To guarantee the highest level of security &amp; trustability, our smart contracts are audited by our partners at CertiK Foundation.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="feats-card glass">
+							<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+								<use xlink:href="#piggy-bank"></use>
+							</svg>
+							<div>
+								<h4 class="fw-bold mb-4">Affordable</h4>
+								<p class="fw-bold" style="color: #666;">Transactions under $300 free of charge, and ebox holders are granted discounted fees.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="feats-card glass">
+							<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+								<use xlink:href="#people"></use>
+							</svg>
+							<div>
+								<h4 class="fw-bold mb-4">Democratic</h4>
+								<p class="fw-bold" style="color: #666;">Through governance votings for everyone holding 1 EBOX or above, the community can shape the course of our project.</p>
+							</div>
+						</div>
+					</div>
+					<div class="col d-flex align-items-start">
+						<div class="feats-card glass">
+							<svg class="bi text-muted flex-shrink-0 me-3" width="1.75em" height="1.75em">
+								<use xlink:href="#x-diamond"></use>
+							</svg>
+							<div>
+								<h4 class="fw-bold mb-4">Transparent</h4>
+								<p class="fw-bold" style="color: #666;">Both financially and technologically, we make sure our users always know what goes on behind the scenes.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div id="news-section" class="mx-auto col-xxl-8 py-5">
+				<div class="p-3 pb-md-5 mx-auto text-center">
+					<h2 class="display-5 fw-bold">ebox news</h2>
+				</div>
+	
+				<div class="row row-cols-1 row-cols-md-3 mb-3 mt-5">
+					<div class="col">
+						<div class="card mb-4 rounded-3 shadow glass">
+							<img src="img/news-mockup-0.png" class="card-img-top" alt="news thumb">
+							<div class="card-body d-grid gap-4 py-4">
+								<h4 class="card-title fw-bold">Introducing ebox - a Safe Haven for DeFi Users</h4>
+								<p class="card-text fw-bold" style="color: #666;">Even though the blockchain ecosystem is often said to be in its infancy, the relative newness of the underlying technology has not...</p>
+								<div class="text-center">
+									<a href="https://news.bitcoin.com/introducing-ebox-a-safe-haven-for-defi-users/" class="btn btn-outline-primary">Read more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card mb-4 rounded-3 shadow glass">
+							<img src="img/news-mockup-1.png" class="card-img-top" alt="news thumb">
+							<div class="card-body d-grid gap-4 py-4">
+								<h4 class="card-title fw-bold">How ethbox Can Help Generate Passive Income</h4>
+								<p class="card-text fw-bold" style="color: #666;">ethbox offers a number of unique safety and privacy features to help those sending and receiving cryptocurrencies on the Ethereum blockchain...</p>
+								<div class="text-center">
+									<a href="https://ethboxofficial.medium.com/how-ethbox-can-help-generate-passive-income-ceae5afaff78" class="btn btn-outline-primary">Read more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="card mb-4 rounded-3 shadow glass">
+							<img src="img/news-mockup-2.png" class="card-img-top" alt="news thumb">
+							<div class="card-body d-grid gap-4 py-4">
+								<h4 class="card-title fw-bold">How ethbox Can Protect Your Crypto Transactions</h4>
+								<p class="card-text fw-bold" style="color: #666;">With cryptocurrencies like Ethereum and Bitcoin becoming huge news in recent months, more and more transactions are taking place every day...</p>
+								<div class="text-center">
+									<a href="https://ethboxofficial.medium.com/how-ethbox-can-protect-your-crypto-transactions-7cc01d59e647" class="btn btn-outline-primary">Read more</a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+	
+				<!-- <div id="roadmap-ghost-title-trigger"></div> -->
+	
+				<div class="text-center pt-4 my-5">
+					<a class="btn btn-lg btn-outline-secondary" href="https://ebox-official.medium.com">Visit our Medium</a>
+				</div>
+			</div>
+		</section>
+	
+		<section id="roadmap-section" class="position-relative bg-light" style="padding: 18rem 0 7.5rem 0; margin-top: -100px;">
+			<header id="roadmap-header">
+				<div id="roadmap-ghost-title" style="transform: translate3d(-50%, -110px, 0px);">Development</div>
+				<h2 class="h1">Roadmap</h2>
+			</header>
+			<div id="roadmap" class="container pt-5 mt-5">
+				<div>
+					<h2 class="h1">H1 2021</h2>
+					<div class="line">
+						<div class="left active"></div>
+						<div class="right active"></div>
+						<div class="form-check done">
+							<input type="radio" class="form-check-input" checked="">
+						</div>
+					</div>
+					<div class="px-4 fs-5">
+						<ul class="list-unstyled">
+							<li>DuckDao Partnership</li>
+							<li>Mainnet v1 live</li>
+							<li>IDO through DuckStarter.io</li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<h2 class="h1">H2 2021</h2>
+					<div class="line">
+						<div class="left active"></div>
+						<div class="right"></div>
+						<div class="form-check active">
+							<input type="radio" class="form-check-input" checked="">
+						</div>
+					</div>
+					<div class="px-4 fs-5">
+						<ul class="list-unstyled">
+							<li>Rebrand from ethbox to ebox</li>
+							<li>Whitepaper v2</li>
+							<li>Testnet v2 live</li>
+							<li>Quest Program</li>
+						</ul>
+					</div>
+				</div>
+				<div>
+					<h2 class="h1">Q1-2 2022</h2>
+					<div class="line">
+						<div class="left"></div>
+						<div class="right"></div>
+						<div class="form-check">
+							<input type="radio" class="form-check-input" disabled="">
+						</div>
+					</div>
+					<div class="px-4 fs-5">
+						<ul class="list-unstyled">
+							<li>OTC / NFT Trading Platform</li>
+							<li>Browser Extension</li>
+							<li>ebox Wallet</li>
+							<li>Mobile App</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	
+		<section class="position-relative px-md-4 pt-5">
+			<div class="light-diagonal"></div>
+	
+			<div class="container col-xxl-8 py-5 text-center" style="margin: 6rem auto;">
+				<h1 class="mb-5">Get involved!</h1>
+				<div class="mb-5 d-grid d-md-flex gap-3 justify-content-evenly" style="font-size: 2.25rem;">
+					<a href="https://discord.gg/ebox">
+						<span class="badge bg-primary">
+							<i class="bi bi-discord"></i> Discord
+						</span>
+					</a>
+					<a href="https://t.me/ebox_official">
+						<span class="badge bg-primary">
+							<i class="bi bi-telegram"></i> Telegram
+						</span>
+					</a>
+					<a href="https://twitter.com/ebox_official">
+						<span class="badge bg-primary">
+							<i class="bi bi-twitter"></i> Twitter
+						</span>
+					</a>
+					<a href="https://www.linkedin.com/company/ebox-official/">
+						<span class="badge bg-primary">
+							<i class="bi bi-linkedin"></i> LinkedIn
+						</span>
+					</a>
+				</div>
+				<p class="lead">or contribute on our <a class="px-2" href="https://github.com/ebox-official"><i class="bi bi-github"></i></a></p>
+			</div>
+		</section>
+	
+		<style>
+			footer a {
+				text-decoration: none;
+				color: #aaa;
+			}
+		</style>
+		<footer class="text-white">
+			<div class="py-5 bg-dark">
+				<div class="container">
+					<div class="ms-4 ms-md-0 d-grid d-md-flex justify-content-md-evenly">
+						<div>
+							<h3 class="text-white">Developers</h3>
+							<ul class="list-unstyled ps-1 d-flex flex-column gap-2">
+								<li>
+									<a href="https://github.com/ebox-official">GitHub</a>
+								</li>
+								<li>
+									<a href="#business-section">Work with Us</a>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<h3 class="text-white">Community</h3>
+							<ul class="list-unstyled ps-1 d-flex flex-column gap-2">
+								<li>
+									<a href="https://ethboxofficial.medium.com/">Medium</a> 
+								</li>
+								<li>
+									<a href="mailto:hello@ebox.io">Contact Us</a>
+								</li>
+								<!-- <li>
+									<a href="">Press Assets</a>
+								</li> -->
+							</ul>
+						</div>
+						<div>
+							<h3 class="text-white">Social</h3>
+							<ul class="list-unstyled ps-1 d-flex flex-column gap-2">
+								<li>
+									<a href="https://discord.gg/ebox"><i class="bi bi-discord"></i> Discord</a>
+								</li>
+								<li>
+									<a href="https://t.me/ebox_official"><i class="bi bi-telegram"></i> Telegram</a> 
+								</li>
+								<li>
+									<a href="https://twitter.com/ebox_official"><i class="bi bi-twitter"></i> Twitter</a>
+								</li>
+								<li>
+									<a href="https://www.linkedin.com/company/ebox-official/"><i class="bi bi-linkedin"></i> LinkedIn</a>
+								</li>
+							</ul>
+						</div>
+						<div>
+							<h3 class="text-white">Info</h3>
+							<ul class="list-unstyled ps-1 d-flex flex-column gap-2">
+								<li>
+									<a href="https://t.me/ebox_testnet">App Support</a>
+								</li>
+								<li>
+									<a href="https://ebox.io/ebox_Whitepaper_v2.pdf">Whitepaper</a> 
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="mt-5 pt-2 mb-3" style="max-width: 333px; margin: 0 auto; text-align: center;">
+						<h3>Stay up to date</h3>
+						<p style="color: #aaa;">Keep in touch with latest ebox news!</p>
+						<form class="mb-2" onsubmit="return subscribe(this);">
+							<div class="input-group">
+								<input id="subscribe-email" type="text" class="form-control" placeholder="Enter your email address">
+								<button id="subscribe-submit" class="btn btn-outline-primary" type="submit">Subscribe</button>
+							</div>
+							<div class="subscribe-notification">
+								<!-- alert go here -->
+							</div>
+						</form>
+						<small class="text-muted">For details, see privacy policy.</small>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid py-4 text-center bg-black">
+				<small class="text-muted">©
+					<script type="text/JavaScript">document.write(new Date().getFullYear());</script>
+						ebox
+					<!-- <a href="">Privacy Policy</a> · 
+					<a href="">Terms and Conditions</a> -->
+				</small>
+			</div>
+		</footer>
+	</div>
+
+	<!-- Bootstrap bundle (with Popper) -->
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/animation.gsap.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/plugins/debug.addIndicators.min.js"></script>
+	<script src="js/TweenMax.js"></script>
+	<script src="js/smooth-scrollbar.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,232 @@
+@font-face {
+  font-family: CenturyGothic;
+  src: url(../font/CenturyGothic.ttf);
+}
+
+:root {
+  --bs-body-rgb-alt: var(--bs-body-bg-rgb-alt); /* Fix Bootstrap-Nightshade missing variable */
+}
+
+body {
+  font-family: 'CenturyGothic', sans-serif;
+}
+
+#main-scrollbar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+}
+
+.pointer {
+  cursor: pointer;
+}
+
+#rotatedText, #rotatedTextUnderline {
+  transition: all .45s ease;
+}
+
+.white-diagonal, .light-diagonal {
+  position: absolute;
+  left: 0;
+  top: -1px;
+  right: 0;
+  width: 100%;
+  height: 100px;
+  clip-path: polygon(0 0, 100% 0, 100% 100px);
+}
+
+.white-diagonal {
+  background-color: var(--bs-white);
+}
+
+.light-diagonal {
+  background-color: var(--bs-light);
+}
+
+.glass {
+  background-color: #fffa;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.business-feature-coming-soon {
+  opacity: .5;
+}
+
+/*** scrollbar
+ *    ███████╗ ██████╗██████╗  ██████╗ ██╗     ██╗     ██████╗  █████╗ ██████╗ 
+ *    ██╔════╝██╔════╝██╔══██╗██╔═══██╗██║     ██║     ██╔══██╗██╔══██╗██╔══██╗
+ *    ███████╗██║     ██████╔╝██║   ██║██║     ██║     ██████╔╝███████║██████╔╝
+ *    ╚════██║██║     ██╔══██╗██║   ██║██║     ██║     ██╔══██╗██╔══██║██╔══██╗
+ *    ███████║╚██████╗██║  ██║╚██████╔╝███████╗███████╗██████╔╝██║  ██║██║  ██║
+ *    ╚══════╝ ╚═════╝╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚══════╝╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+ *                                                                             
+ */
+::-webkit-scrollbar-track, html.dark ::-webkit-scrollbar-track {
+  box-shadow: inset -1px 0 .3em #fff3,
+              inset 1px 0 .3em #0003;
+}
+html.dark ::-webkit-scrollbar-track, html.dark ::-webkit-scrollbar-track {
+  background-color: var(--bs-body-bg-alt);
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+  background-color: var(--bs-body-bg);
+}
+html.dark ::-webkit-scrollbar {
+  background-color: var(--bs-body-bg-alt);
+}
+
+::-webkit-scrollbar-thumb, html.dark ::-webkit-scrollbar-thumb {
+  background-color: #f60a;
+}
+
+/*** roadmap
+ *    ██████╗  ██████╗  █████╗ ██████╗ ███╗   ███╗ █████╗ ██████╗ 
+ *    ██╔══██╗██╔═══██╗██╔══██╗██╔══██╗████╗ ████║██╔══██╗██╔══██╗
+ *    ██████╔╝██║   ██║███████║██║  ██║██╔████╔██║███████║██████╔╝
+ *    ██╔══██╗██║   ██║██╔══██║██║  ██║██║╚██╔╝██║██╔══██║██╔═══╝ 
+ *    ██║  ██║╚██████╔╝██║  ██║██████╔╝██║ ╚═╝ ██║██║  ██║██║     
+ *    ╚═╝  ╚═╝ ╚═════╝ ╚═╝  ╚═╝╚═════╝ ╚═╝     ╚═╝╚═╝  ╚═╝╚═╝     
+ *                                                                
+ */
+ #roadmap-header {
+  position: relative;
+}
+
+#roadmap-header > div {
+  text-transform: uppercase;
+  font-size: 4.44rem;
+  color: #f608;
+}
+
+#roadmap-header > div,
+#roadmap-header > h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#roadmap > div {
+  flex-shrink: 0;
+  max-width: 256px;
+}
+
+#roadmap > div > h2 {
+  text-align: center;
+}
+
+#roadmap > div > .line {
+  position: relative;
+  height: 50px;
+}
+
+#roadmap > div > .line > * {
+  position: absolute;
+  top: 50%;
+}
+
+#roadmap > div > div > .form-check.done::after,
+#roadmap > div > div > .form-check.active::after {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#roadmap > div > div > .left,
+#roadmap > div > div > .right {
+  transform: translateY(-50%);
+  width: 50%;
+  height: 2px;
+  background-color: var(--bs-primary);
+}
+
+#roadmap > div > div > .right {
+  right: 0;
+}
+
+#roadmap > div > div > .left.active,
+#roadmap > div > div > .right.active {
+  height: 6px;
+}
+
+#roadmap > div > div > .form-check {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#roadmap > div > div > .form-check .form-check-input {
+  opacity: 1!important;
+}
+
+#roadmap ul {
+  display: grid;
+  gap: 1rem;
+  margin-top: 2rem;
+  line-height: 1.1;
+}
+
+/*** media queries
+ *    ███╗   ███╗███████╗██████╗ ██╗ █████╗ ███████╗
+ *    ████╗ ████║██╔════╝██╔══██╗██║██╔══██╗██╔════╝
+ *    ██╔████╔██║█████╗  ██║  ██║██║███████║███████╗
+ *    ██║╚██╔╝██║██╔══╝  ██║  ██║██║██╔══██║╚════██║
+ *    ██║ ╚═╝ ██║███████╗██████╔╝██║██║  ██║███████║
+ *    ╚═╝     ╚═╝╚══════╝╚═════╝ ╚═╝╚═╝  ╚═╝╚══════╝
+ *                                                  
+ */
+/* Mobile */
+@media(max-width: 576px) {
+
+  .bc-logo {
+    height: 32px;
+  }
+
+  #roadmap {
+    justify-content: flex-start;
+  }
+
+  #roadmap-header > div {
+    font-size: 3.33rem;
+  }
+
+  #roadmap > div {
+    margin: 0 auto;
+    margin-bottom: 3rem;
+  }
+
+  #roadmap > div > h2 {
+    padding-bottom: .25rem;
+    border-bottom: 2px solid #ff6000;
+  }
+
+  #roadmap > div > .line {
+    display: none;
+  }
+
+}
+/* NON mobile */
+@media(min-width: 577px) {
+
+  /* .glass {
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+  } */
+
+  .bc-logo {
+    height: 64px;
+  }
+
+  #roadmap {
+    display: flex;
+    justify-content: center;
+  }
+}
