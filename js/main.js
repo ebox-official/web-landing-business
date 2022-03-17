@@ -1,4 +1,4 @@
-var textForRotation = ["Made Simple", "Made Safe", "Made Reversible", "Reinvented"];
+var textForRotation = ["Made Simple", "Made Safe", "Reinvented"];
 var textForRotationIndex = 1;
 var rotateTime = 3000;
 

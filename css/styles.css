@@ -5,6 +5,7 @@
 
 :root {
   --bs-body-rgb-alt: var(--bs-body-bg-rgb-alt); /* Fix Bootstrap-Nightshade missing variable */
+  --bg-light-alt: #333;
 }
 
 body {
@@ -27,7 +28,7 @@ body {
   transition: all .45s ease;
 }
 
-.white-diagonal, .light-diagonal {
+.dark-diagonal, .light-diagonal {
   position: absolute;
   left: 0;
   top: -1px;
@@ -37,21 +38,25 @@ body {
   clip-path: polygon(0 0, 100% 0, 100% 100px);
 }
 
-.white-diagonal {
-  background-color: var(--bs-white);
+.dark-diagonal {
+  background-color: var(--bs-dark);
 }
 
 .light-diagonal {
-  background-color: var(--bs-light);
+  background-color: var(--bg-light-alt);
 }
 
 .glass {
-  background-color: #fffa;
+  background-color: #222a;
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
 .business-feature-coming-soon {
   opacity: .5;
+}
+
+.bg-light-alt {
+  background-color: var(--bg-light-alt);
 }
 
 /*** scrollbar
