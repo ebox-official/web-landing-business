@@ -334,7 +334,7 @@
 			</div>
 
 			<!-- video -->
-			<div class="mt-5" style="position: relative; z-index: 2">
+			<!-- <div class="mt-5" style="position: relative; z-index: 2">
 				<style>
 					.laptop-screen {
 						width: 80%;
@@ -360,13 +360,11 @@
 									WHAT ABOUT PUTTING A VIDEO HERE???
 								</span>
 							</div>
-							<!-- <iframe src="https://www.youtube.com/embed/jA9MufTDSwo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="">
-							</iframe> -->
 						</div>
 					</div>
 					<img src="img/laptop-base.png" alt="laptop base" class="laptop-base img-fluid">
 				</div>
-			</div>
+			</div> -->
 			<!-- end of video -->
 
 		</section>
@@ -377,43 +375,51 @@
 				<div class="row justify-content-center align-items-center g-5 py-5 my-5">
 
 					<div class="col-lg-6">
-						<div class="text-center">
-							<h2 class="display-5 fw-bold lh-1 mt-5 mb-3">Contact Us</h2>
-							<p>Curious to implement our innovations &amp; solutions? Drop us a message!</p>
-						</div>
-						<div class="container-fluid mt-5 p-0">
-							<form class="row g-2 mb-4" onsubmit="return sendEmail(this);">
-								<div class="col-12 col-md-6">
-									<label for="name" class="ms-2 form-label">Name</label>
-									<input id="name" type="text" class="form-control" placeholder="Name" maxlength="255" required>
-								</div>
-								<div class="col-12 col-md-6">
-									<label for="subject" class="ms-2 form-label">Subject</label>
-									<input id="subject" type="text" class="form-control" placeholder="Subject" maxlength="255" required>
-								</div>
-								<div class="col-12">
-									<label for="contact-us-email" class="ms-2 form-label">Email</label>
-									<input type="email" class="form-control" id="contact-us-email" placeholder="Email" maxlength="255" required>
-								</div>
-								<div class="col-12">
-									<label for="message" class="ms-2 form-label">Message</label>
-									<textarea class="form-control" id="message" rows="3" maxlength="5000" required></textarea>
-								</div>
-								<div class="col-12 mt-5">
-									<button id="contact-us-submit" type="submit" class="d-block w-50 mx-auto btn btn-primary btn-lg">Send</button>
-								</div>
-								<div class="contact-us-notification">
-									<!-- alert go here -->
-								</div>
-							</form>
-							<small class="text-muted">
-								Business inquiries only. Non-business requests posted through this form will not be answered. For such, kindly contact <a href="mailto:hello@ebox.io">hello@ebox.io</a> directly.
-							</small>
+
+						<style>
+							.special-title-2 {
+								font-size: 4.25rem;
+								font-weight: bold;
+								letter-spacing: 1rem;
+								line-height: 1.1;
+								margin: 0;
+							}
+							.special-title-2 > span {
+								position: relative;
+								color: var(--bs-primary);
+							}
+							.eips-ghost-text {
+								position: absolute;
+								top: -11rem;
+								z-index: -1;
+								font-size: 16rem;
+								font-weight: lighter;
+								-webkit-text-stroke: 1px #f603;
+								-webkit-text-fill-color: #0000;
+							}
+							@media screen and (max-width: 576px) {
+								.special-title-2 {
+									font-size: 7.5vw;
+								}
+							}
+						</style>
+						<h1 class="special-title-2"><span class="s-1">e</span>box</h1>
+						<div class="special-title-2"><span class="s-2">I</span>nvestment</div>
+						<div class="special-title-2"><span class="s-3">P</span>latform</div>
+						<div class="special-title-2"><span class="s-4">S</span>ervice</div>
+
+						<div style="padding-top: 1.5rem;">
+							<p class="fw-bold" style="color: #999;">Thanks to the the know-how of all the ins and outs of DAOs we gathered over the years we are presenting a service that brings the best to the world of launchpads and IDOs.</p>
+							<p class="fw-bold" style="color: #999;">The ebox Investment Platform Service enables project administrators to deploy a crowd sale at highly customizable conditions through a convenient dashboard.</p>
+							<div class="mt-4 d-grid gap-2 d-md-flex justify-content-md-start">
+								<button class="btn btn-outline-secondary btn-lg px-4 me-md-2" disabled>Coming soon</button>
+							</div>
 						</div>
 					</div>
 
-					<div class="col-10 col-sm-8 col-lg-6">
-						<img src="img/contact-us-reverse.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="450">
+					<div class="position-relative col-10 col-sm-8 col-lg-6">
+						<div class="eips-ghost-text">eIPS</div>
+						<img src="img/mac-eips-mockup.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="450">
 					</div>
 
 				</div>
@@ -491,33 +497,33 @@
 					<div class="col-12 col-md-6">
 						<div class="h-100 px-3 py-4 shadow rounded bg-dark">
 							<h2 class="display-6 fw-bold mb-1">In-Wallet Staking</h2>
-							<small>Staking as a service</small>
+							<small>Solution</small>
 							<hr>
-							<p class="fw-bold">We provide our staking calculations as a tailor-made solution, through a simple API for your project's staking dashboard.</p>
+							<p class="fw-bold">The innovative ebox staking model, no token locking required. Available for your project through a simple API, and as a white-label solution in the near future.</p>
 						</div>
 					</div>
 					<div class="col-12 col-md-6">
 						<div class="h-100 px-3 py-4 shadow rounded bg-dark">
-							<h2 class="display-6 fw-bold mb-1">eIPS: Crowd Sales</h2>
-							<small>ebox Investment Platform Service</small>
-							<hr>
-							<p class="fw-bold">The ebox Investment Platform Service enables project administrators to deploy a crowd sale through a convenient dashboard.</p>
-						</div>
-					</div>
-					<div class="col-12 col-md-6 business-feature-coming-soon">
-						<div class="h-100 px-3 py-4 shadow rounded bg-dark">
 							<h2 class="display-6 fw-bold mb-1">Liquidity Lock</h2>
-							<small>Coming soon</small>
+							<small>Service</small>
 							<hr>
-							<p class="fw-bold">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Facilis, tempore ut nostrum voluptatibus magnam hic perferendis.</p>
+							<p class="fw-bold">Low-fee smart contract token locking service – Gain your community's trust, safely lock your LP tokens acquired through providing liquidity.</p>
 						</div>
 					</div>
 					<div class="col-12 col-md-6 business-feature-coming-soon">
 						<div class="h-100 px-3 py-4 shadow rounded bg-dark">
-							<h2 class="display-6 fw-bold mb-1">Staking as Service</h2>
-							<small>Coming soon</small>
+							<h2 class="display-6 fw-bold mb-1">eIPS: Crowd Sales</h2>
+							<small>Upcoming</small>
 							<hr>
-							<p class="fw-bold">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Distinctio accusamus similique veritatis pariatur a aperiam?</p>
+							<p class="fw-bold">The ebox Investment Platform Service enables project administrators to deploy crowd sales through a complete all-around solution. 100% DeFi, 100% smart contract - No manual (re)funding, no room for error.</p>
+						</div>
+					</div>
+					<div class="col-12 col-md-6 business-feature-coming-soon">
+						<div class="h-100 px-3 py-4 shadow rounded bg-dark">
+							<h2 class="display-6 fw-bold mb-1">Transactionless Governance</h2>
+							<small>Upcoming</small>
+							<hr>
+							<p class="fw-bold">Same as with staking, we will be providing our transactionless governance model through API & dashboard in the near future.</p>
 						</div>
 					</div>
 				</div>
