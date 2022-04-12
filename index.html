@@ -51,10 +51,10 @@
 				<div class="fw-bold collapse navbar-collapse" id="navbarScroll">
 					<ul class="flex-grow-1 gap-md-4 navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll justify-content-center">
 						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="#escrow-section">Staking As Service</a>
+							<a class="nav-link" aria-current="page" href="#escrow-section">Staking as a Service</a>
 						</li>
 						<li class="nav-item">
-							<a class="nav-link" aria-current="page" href="#staking-section">ebox Investment Platform</a>
+							<a class="nav-link" aria-current="page" href="#staking-section">ebox Investment Platform Service</a>
 						</li>
 						<li class="nav-item">
 							<a class="nav-link" href="#business-section">Business Solutions</a>
@@ -271,58 +271,70 @@
 		<section id="staking-as-service" class="custom-section-1 custom-section-1--left">
 			<div class="triangle"></div>
 			<div class="custom-section-1__content container col-xxl-8">
-				<div class="row g-5 py-5 my-5">
-
-					<style>
-						.special-title {
-							font-size: 5.25rem;
-							font-weight: bold;
-							letter-spacing: 1rem;
-							line-height: 1.1;
-							margin: 0;
-						}
-						.special-title > span {
-							position: relative;
-							color: var(--bs-primary);
-						}
-						.special-title > span.s-1::after,
-						.special-title > span.s-2::after,
-						.special-title > span.s-3::after {
-							position: absolute;
-							z-index: -1;
-							font-size: 16rem;
-							font-weight: lighter;
-							-webkit-text-stroke: 1px #f603;
-							-webkit-text-fill-color: #0000;
-						}
-						.special-title > span.s-1::after {
-							content: "S";
-							top: -23rem;
-							left: -14.5rem
-						}
-						.special-title > span.s-2::after {
-							content: "A";
-							top: -15rem;
-							left: -17rem;
-						}
-						.special-title > span.s-3::after {
-							content: "S";
-							top: -8rem;
-							left: -14.5rem
-						}
-						@media screen and (max-width: 576px) {
-							.special-title {
-								font-size: 10vw;
-							}
-						}
-					</style>
+				<div class="row g-5 py-5 my-5 align-items-center">
+					
 					<div class="col-10 col-sm-8 col-lg-6">
-						<h1 class="special-title"><span class="s-1">S</span>taking</h1>
-						<div class="special-title"><span class="s-2">A</span>s</div>
-						<div class="special-title"><span class="s-3">S</span>ervice</div>
+						<img src="img/staking-mockup.png" class="d-block mx-lg-auto img-fluid" alt="staking as a service screenshot" width="450">
 					</div>
 
 					<div class="col-lg-6" style="padding-top: 1.5rem;">
+
+						<style>
+							.special-title-wrap {
+								align-items: start;
+								display: inline-flex;
+								margin-bottom: 1.75rem;
+							}
+							.special-title__initial {
+								color: var(--bs-primary);
+							}
+							.special-title__primary {
+								font-size: 8.15rem;
+								font-weight: bold;
+								line-height: 0;
+							}
+							.special-title__secondary {
+								display: flex;
+								justify-content: space-between;
+								font-size: 1.5rem;
+								line-height: 1;
+								opacity: .777;
+							}
+							.special-title__space {
+								width: 1rem;
+							}
+							@media screen and (max-width: 576px) {
+								.special-title__primary {
+									font-size: 24vw;
+								}
+								.special-title__secondary {
+									font-size: 5vw;
+								}
+							}
+						</style>
+						<div class="special-title-wrap">
+							<div class="special-title">
+								<span class="special-title__primary">
+									<span class="special-title__initial">S</span>takin
+								</span>
+								<span class="special-title__secondary">
+									<span class="special-title__initial">a</span>
+									<span>s</span>
+									<span class="special-title__space"> </span>
+									<span class="special-title__initial">a</span>
+									<span class="special-title__space"> </span>
+									<span class="special-title__initial">S</span>
+									<span>e</span>
+									<span>r</span>
+									<span>v</span>
+									<span>i</span>
+									<span>c</span>
+									<span>e</span>
+								</span>
+							</div>
+							<span class="special-title__primary">g</span>
+						</div>
+
 						<p class="fw-bold" style="color: #999;">After seeing how well the staking model that we initially developed only for our own purposes was received by our community and outsiders alike, and on top of that being approached by another crypto project asking for help with their staking program, we realized the need for providing the technology we develop to other crypto projects and businesses.</p>
 						<p class="fw-bold" style="color: #999;">As of now, we are providing our staking calculations after individual consultation, through a simple API for integrating the calculation results into your project’s staking dashboard. Kindly contact us below if you are interested in integrating the ebox our Staking As Service into your project.</p>
 						<div class="mt-4 d-grid gap-2 d-md-flex justify-content-md-start">
@@ -332,41 +344,6 @@
 
 				</div>
 			</div>
-
-			<!-- video -->
-			<!-- <div class="mt-5" style="position: relative; z-index: 2">
-				<style>
-					.laptop-screen {
-						width: 80%;
-						margin: 0 auto;
-						border: .25rem solid #000;
-						border-radius: 1rem;
-						border-top-width: 1rem;
-						border-bottom-width: 1rem;
-						background-color: #000;
-						box-shadow: 0 0 0px 5px #938f93;
-					}
-					.laptop-base {
-						display: block;
-						margin: 0 auto;
-					}
-				</style>
-				<h1 class="text-center mb-5 pb-2 fw-bold">How does it work?</h1>
-				<div class="container col-xxl-8">
-					<div class="laptop-screen">
-						<div class="ratio ratio-16x9">
-							<div class="position-absolute w-100 h-100 d-flex justify-content-center align-items-center">
-								<span>
-									WHAT ABOUT PUTTING A VIDEO HERE???
-								</span>
-							</div>
-						</div>
-					</div>
-					<img src="img/laptop-base.png" alt="laptop base" class="laptop-base img-fluid">
-				</div>
-			</div> -->
-			<!-- end of video -->
-
 		</section>
 
 		<section id="eips" class="custom-section-1 custom-section-1--right-alt">
@@ -378,19 +355,23 @@
 
 						<style>
 							.special-title-2 {
+								display: grid;
+								grid-template-columns: min-content 1fr;
 								font-size: 4.25rem;
 								font-weight: bold;
-								letter-spacing: 1rem;
-								line-height: 1.1;
+								letter-spacing: 4px;
+								line-height: 1.05;
 								margin: 0;
 							}
-							.special-title-2 > span {
-								position: relative;
+							.special-title-2__initial {
+								justify-self: center;
 								color: var(--bs-primary);
+								margin-right: 8px;
 							}
-							.eips-ghost-text {
+							#eips-ghost-text {
 								position: absolute;
-								top: -11rem;
+								right: 0;
+								top: -20rem;
 								z-index: -1;
 								font-size: 16rem;
 								font-weight: lighter;
@@ -399,14 +380,16 @@
 							}
 							@media screen and (max-width: 576px) {
 								.special-title-2 {
-									font-size: 7.5vw;
+									font-size: 12vw;
 								}
 							}
 						</style>
-						<h1 class="special-title-2"><span class="s-1">e</span>box</h1>
-						<div class="special-title-2"><span class="s-2">I</span>nvestment</div>
-						<div class="special-title-2"><span class="s-3">P</span>latform</div>
-						<div class="special-title-2"><span class="s-4">S</span>ervice</div>
+						<div class="special-title-2">
+							<span class="special-title-2__initial">e</span><span>box</span>
+							<span class="special-title-2__initial">I</span><span>nvestment</span>
+							<span class="special-title-2__initial">P</span><span>latform</span>
+							<span class="special-title-2__initial">S</span><span>ervice</span>
+						</div>
 
 						<div style="padding-top: 1.5rem;">
 							<p class="fw-bold" style="color: #999;">Thanks to the the know-how of all the ins and outs of DAOs we gathered over the years we are presenting a service that brings the best to the world of launchpads and IDOs.</p>
@@ -418,8 +401,8 @@
 					</div>
 
 					<div class="position-relative col-10 col-sm-8 col-lg-6">
-						<div class="eips-ghost-text">eIPS</div>
-						<img src="img/mac-eips-mockup.png" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="450">
+						<div class="d-none d-lg-block" id="eips-ghost-text">eIPS</div>
+						<img src="img/eips-mockup.png" class="d-block mx-lg-auto img-fluid" alt="ebox investment platform service mockup" width="720">
 					</div>
 
 				</div>

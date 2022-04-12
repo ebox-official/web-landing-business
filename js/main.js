@@ -39,11 +39,11 @@ function scrollParallax(elementSelector, triggerElement, duration, transformFrom
 }
 
 // scrollParallax(
-//     "#roadmap-ghost-title",
-//     "#roadmap-ghost-title-trigger",
+//     "#eips-ghost-text",
+//     "#eips-ghost-text-trigger",
 //     333,
-//     "translate(-50%, -20%)",
-//     "translate(-50%, -80%)"
+//     "translate(0, -20%)",
+//     "translate(0, -80%)"
 // );
 
 let Scrollbar = window.Scrollbar;
