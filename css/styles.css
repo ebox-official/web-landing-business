@@ -51,12 +51,20 @@ body {
   border: 1px solid rgba(255, 255, 255, 0.3);
 }
 
-.business-feature-coming-soon {
+.business-feature-upcoming {
   opacity: .5;
 }
 
 .bg-light-alt {
   background-color: var(--bg-light-alt);
+}
+
+.link-muted {
+	--bs-text-opacity: 1;
+	color: #9e9e9e !important;
+}
+a.link-muted:hover {
+	color: #cc5000 !important;
 }
 
 /*** scrollbar

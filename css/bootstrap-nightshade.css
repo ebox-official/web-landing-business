@@ -11990,6 +11990,7 @@ html.dark .btn-outline-secondary.dropdown-toggle.show:focus {
 
 html.dark .btn-outline-secondary:disabled, html.dark .btn-outline-secondary.disabled {
   color: #5d8dff;
+  border-color: #5d8dff;
   background-color: transparent;
 }
 html.dark .btn-outline-success {
